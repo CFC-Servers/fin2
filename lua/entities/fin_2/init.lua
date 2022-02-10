@@ -6,7 +6,6 @@ include('shared.lua')
 CreateClientConVar("fin2_delete_dup_onremove", 1, true, false, "Delete the duplication on remove or not (Fin II)")
 
 function ENT:Initialize()
-	math.randomseed(CurTime())
 	self.Entity:SetMoveType( MOVETYPE_NONE )                 
 end   
 
